@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    font-family: 'Poppins', sans-serif;
+}
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color:black;
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section{
+    float: left;
+     width: 50%;
+
+}
+.image-section{
+    float: right;
+    
+    width: 40%;
+}
+.image-section img{
+    width: 92%;
+    height: auto;
+}
+.content-section .title{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: aliceblue;
+}
+.content-section .content h3{
+    margin-top: 20px;
+    color: beige;
+    font-size: 21px;
+    
+}
+.content-section .content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+   font-size: 18px;
+   line-height: 1.5;
+   color: azure;
+}
+
+
+
+.content-section .content .button{
+    margin-top: 50px;
+}
+.content-section .content .button a{
+    display: inline-block;
+    padding: 14px 30px;
+    background: #101112;
+    color: white;
+    border: 2px solid  white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.6s ease-in-out;
+    text-decoration-thickness: 0;
+}
+.content-section .content .button a:hover{
+    transform: translateY(-5px);
+    background:transparent;
+    border: 2px solid  #00ffff;
+    color: #00FFFF;
+}
+
+
+
+.share{
+    position: absolute;
+    bottom: 2rem;
+    left: 8%;
+    display: flex;
+   align-items: last baseline;
+    
+}
+.share p{
+    font-size: 12px;
+     color: var(--text-color);
+     margin-right: 20px ;
+     text-align: left;
+}
+.social i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    width: 38px;
+    background:  linear-gradient(130130.08deg, #383528 0% , #191919 100%);
+    box-shadow:  0px 20px 40px #00000070;
+    border:1px solid #3b3b3b;
+     border-radius:50% ;
+     color:white;
+     font-size: 20px;
+     margin: 0 7px;
+     transition: all 0.6s ease-in-out;
+}
+.social i:hover{
+    transform: translateY(-10px);
+    color:#00FFFF;
+}
+
+
+
+#check {
+    display: none
+
+}
+.content1{
+    display: none;
+}
+
+label{
+    margin: 10px;
+    color: #00ffff;
+    display: inline;
+
+    padding: 14px 30px;
+    background: #101112;
+    color: white;
+    border: 2px solid  white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+  
+    
+    cursor: pointer;
+    display: inline-block;
+}
+
+label:hover{
+    transform: translateY(-5px);
+    background:transparent;
+    border: 2px solid  #00ffff;
+    color: #00FFFF;
+}
+
+
+
+#check:checked ~ .content1{
+    display: block;
+}
+
+#check:checked ~ label{
+   visibility: hidden;
+ 
+}
+#check:checked ~ label:after{
+    content: 'Show less';
+    display: block;
+    visibility: visible;
+    padding: 14px 25px;
+    background: #101112;
+    color: #00ffff;
+    border: 2px solid  #00ffff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    
+}
+#check:checked ~ label:hover{
+    transform: translateY(-5px);
+    background:transparent;
+    border: 2px solid  #00ffff;
+    color: #00FFFF;
+}
+
+
+@media screen and (max-width:750px){
+    
+    
+    
+    .content-section .title{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 28px;
+        
+    }
+    .content-section{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 30px;
+    }
+    .content-section .content .button{
+        width: 100%;
+        margin: 30px 0px ;
+    }
+
+    .content-section .content h3{
+        font-size: 20px;
+    }
+    .content-section .content p{
+        font-size: 15px;
+    }
+    label   {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .image-section {
+        align-items: center;
+    }
+    .image-section img{
+       width: 250px;
+       height: 350px;
+       float: left;
+    }
+    
+}
+@media screen and (max-width:650px){
+    
+
+    
+    
+    .content-section .title{
+    
+        text-align: center;
+          padding: 0%;
+        font-size: 16px;
+        
+    }
+    .content-section{
+        width: 100%;
+        height: 100%;
+       background:black;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 20px;
+    }
+    .content-section .content .button{
+        width: 100%;
+        margin: 50px 0px ;
+    }
+
+    .content-section .content h3{
+        font-size: 16px;
+    }
+    .content-section .content p{
+        font-size: 14px;
+    
+    }
+   
+    label   {
+        display: none;
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .image-section img{
+       width: 320px;
+       height: 400px;
+    
+    }
+    .image-section {
+        float: left;
+        
+    }
+    .share{
+        position: absolute;
+        bottom: 2rem;
+        left: 2%;
+        display: flex;
+       align-items: last baseline;
+        
+    }
+    
+    .social i{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 25px;
+        width: 25px;
+        background:  linear-gradient(130130.08deg, #383528 0% , #191919 100%);
+        box-shadow:  0px 20px 40px #00000070;
+        border:1px solid #3b3b3b;
+         border-radius:50% ;
+         color:white;
+         font-size: 20px;
+         margin: 0 7px;
+         transition: all 0.6s ease-in-out;
+    }
+
+}
+@media (max-width:400px){
+  
+    .share{
+        position: absolute;
+        
+        left: 2%;
+        display: none;
+       align-items: last baseline;
+    
+        
+    }
+    .content-section .title{
+    
+        text-align: center;
+          padding: 0%;
+        font-size: 14px;
+        
+    }
+    .content-section{
+        width: 100%;
+        height: 100%;
+       background:black;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 18px;
+    }
+    .content-section .content .button{
+        width: 100%;
+        margin: 30px 0px ;
+    }
+
+    .content-section .content h3{
+        font-size: 15px;
+    }
+    .content-section .content p{
+        font-size: 13px;
+    
+    }
+    .image-section img{
+        width: 300px;
+        height: 350px;
+     
+     }
+    
+    .social i{
+      
+        display: none;
+        height: 25px;
+        width: 25px;
+        background:  linear-gradient(130130.08deg, #383528 0% , #191919 100%);
+        box-shadow:  0px 20px 40px #00000070;
+        border:1px solid #3b3b3b;
+         border-radius:50% ;
+         color:white;
+         font-size: 20px;
+         margin: 0 7px;
+         transition: all 0.6s ease-in-out;
+    }
+     .image-section{
+        width: 100%;
+        height: 100;
+     }
+    
+}
+
