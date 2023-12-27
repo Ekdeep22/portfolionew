@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact me </title>
+    <link rel="stylesheet" href="sa4.css">
+</head>
+<body>
+    <section class="contact" id="contact">
+        <h1 class="sub-title">
+         Contact <span>Me</span>
+         </h1>
+
+        <form action="#" onsubmit="sendEmail(); reset(); return false;">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" id="name" >
+                    <span class="focus"></span>
+                   <!--  <div class="eorror-text">Full Name can't be blank</div>-->
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Address" id="email">
+                    <span class="focus"></span>
+                 <!--    <div class="eorror-text"> Email Address can't be blank</div>-->
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Mobile number" id="namber" >
+                    <span class="focus"> </span>
+                    <!-- <div class="eorror-text">Mobile number can't be blank</div>-->
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" id="subjet" >
+                    <span class="focus"> </span>
+                    <!--<div class="eorror-text">Email Subject can't be blank</div>-->
+                </div>
+            </div>
+            <div class="textarea-field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" autocomplete="off"></textarea>
+                <span class="focus"> </span>
+               <!--  <div class="eorror-text">message can't be blank</div>-->
+            </div>
+            <div class="main-btn">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
+    
+
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    var btn= document.getElementById("btn");
+    btn.addEventListener('click',function(e)
+    {
+        e.preventDefault()
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "ekdeepsagar756@gmail.com",
+    Password : "EkdeepSagar@123",
+    To : 'ekdeepsagar756@gmail.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+
+
+    })
+   
+</script>
+
+</body>
+</html>
