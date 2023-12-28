@@ -283,7 +283,7 @@ section{
         position: absolute;
         bottom: 2rem;
         left: 2%;
-        display: flex;
+        display: none;
        align-items: last baseline;
         
     }
@@ -348,7 +348,7 @@ section{
         position: absolute;
         bottom: 2rem;
         left: 2%;
-        display: flex;
+        display: none;
        align-items: last baseline;
         
     }
