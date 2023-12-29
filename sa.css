@@ -285,6 +285,7 @@ section{
         left: 2%;
         display: none;
        align-items: last baseline;
+         margin-bottom: -25px;
         
     }
     
@@ -350,6 +351,7 @@ section{
         left: 2%;
         display: none;
        align-items: last baseline;
+         margin-bottom: -25px;
         
     }
     
@@ -399,7 +401,7 @@ section{
     }
     .share{
         position: absolute;
-        
+         margin-bottom: -25px;
         left: 2%;
         display: none;
        align-items: last baseline;
