@@ -222,7 +222,7 @@ section{
 
 
 
-@media (max-width:750px){
+@media (max-width:950px){
     
 .share{
     display: flex;
@@ -253,7 +253,7 @@ section{
         height: auto;
     }
 }
-@media (max-width:650px){
+@media (max-width:850px){
     .navbar{
         position: absolute;
         width: 100%;
@@ -308,7 +308,7 @@ section{
     
 }
 
-@media (max-width: 450px){
+@media (max-width: 550px){
     :root{
         --big-font:4rem;
         --p-font:15px;
@@ -319,7 +319,7 @@ section{
     }
 }
 
-@media (max-width:550px){
+@media (max-width:450px){
     .navbar{
         position: absolute;
         width: 100%;
