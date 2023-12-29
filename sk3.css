@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins' sans-serif;
+    margin-bottom: 5px;
+    
 }
 body{
     color: white;
@@ -36,7 +38,7 @@ margin-left: 120px;
     margin-bottom: 25px;
 }
 .heading1{
-    padding: 10px;
+    padding: 35px;
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
